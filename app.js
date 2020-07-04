@@ -1,5 +1,4 @@
-var compression = require('compression');
-var helmet = require('helmet');
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
