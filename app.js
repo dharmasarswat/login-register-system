@@ -15,7 +15,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-app.use(helmet());
 
 // Passport Config
 require('./config/passport')(passport);
