@@ -21,3 +21,7 @@ $ npm run dev
 ### MongoDB
 
 Open "config/keys.js" and add your MongoDB URI, local or Atlas
+
+### Live Demo
+
+https://serene-carlsbad-caverns-55492.herokuapp.com/
