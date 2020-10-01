@@ -1,12 +1,12 @@
 let wrapper
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
-async function writingAll (stringTarget, container){
+async function writingAll (stringTarget, container) {
   wrapper = document.querySelector('['+container+']')
   const stringsContainer = document.getElementsByClassName(stringTarget)
      
   while(wrapper){
-    for (i=0; i <  stringsContainer.length ; i++){
+    for (let i=0, len=stringsContainer.length; i<len; i++){
       const string = stringsContainer[i].textContent
       await write(string)
       await sleep(1000)
@@ -16,7 +16,7 @@ async function writingAll (stringTarget, container){
   }
 };
 
-async function write(text){    
+async function write (text) {    
   let index = 0
   while(index < text.length){
     const timeout = 100
@@ -28,7 +28,7 @@ async function write(text){
 
 
 async function erase() {
-  while(wrapper.textContent.length){
+  while (wrapper.textContent.length) {
     const timeout = 100
     await sleep(timeout)
     wrapper.textContent = wrapper.textContent.substring(0, wrapper.textContent.length - 2)
