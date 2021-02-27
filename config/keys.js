@@ -1,4 +1,4 @@
-dbPassword = 'mongodb+srv://test:'+ encodeURIComponent('1234') + '@lottery-pwzb7.mongodb.net/users?retryWrites=true&w=majority';
+dbPassword = 'mongodb+srv://test:'+ encodeURIComponent('*****') + '@lottery-pwzb7.mongodb.net/users?retryWrites=true&w=majority';
 
 session_secrete = 'jguewibwfvsufeftwwsbvugf',
 
